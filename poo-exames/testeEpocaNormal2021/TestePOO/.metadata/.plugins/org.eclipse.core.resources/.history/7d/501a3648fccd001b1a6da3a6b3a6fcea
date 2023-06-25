@@ -1,0 +1,25 @@
+package ex03;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = null;
+		TreeMap<Integer,Student> dados = new TreeMap<Integer,Student>();
+		
+		try {
+			sc = new Scanner(new File("notas.txt"));
+		} catch (IOException e) {
+			System.out.print("ERRO"+e);
+		}
+		
+		while (sc.hasNextLine()) {
+			String linha = sc.nextLine();
+			String dadosLinha [] = linha.split("\t");
+			
+		}
+	}
+}

@@ -1,0 +1,55 @@
+
+public class Caixa {
+	private int num;
+	private TipoCaixa tc;	
+	public Caixa(int n, TipoCaixa t) {
+		num = n;
+		tc = t;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public TipoCaixa getTc() {
+		return tc;
+	}
+
+	public void setTc(TipoCaixa tc) {
+		this.tc = tc;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + num;
+		result = prime * result + ((tc == null) ? 0 : tc.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Caixa other = (Caixa) obj;
+		if (num != other.num)
+			return false;
+		if (tc != other.tc)
+			return false;
+		return true;
+	}
+
+	public String getTipoCaixa() {
+		return tc.name();
+	}
+	
+}

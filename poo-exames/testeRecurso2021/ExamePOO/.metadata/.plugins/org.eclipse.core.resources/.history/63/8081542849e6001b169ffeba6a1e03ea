@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Encarregado extends Trabalhador{
+	private ArrayList<Operador> operadores;
+	
+	public Encarregado(int num, String nome) {
+		super(num, nome);
+		operadores = new ArrayList<Operador>();
+	}
+	public void mudaOperador(Operador op1, Operador op2) {
+		//TODO !!!!
+	}
+	
+	public void atribuirEmpregado (Operador obj) {
+		operadores.add(obj);
+	}
+}

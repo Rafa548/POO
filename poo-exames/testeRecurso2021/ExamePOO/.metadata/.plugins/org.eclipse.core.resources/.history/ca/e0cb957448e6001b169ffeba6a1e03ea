@@ -1,0 +1,6 @@
+
+public class Operador extends Trabalhador {
+	public Operador(int num, String nome) {
+		super(num,nome);
+	}
+}

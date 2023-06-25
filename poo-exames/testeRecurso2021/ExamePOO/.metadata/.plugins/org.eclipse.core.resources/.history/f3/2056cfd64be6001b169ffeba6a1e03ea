@@ -1,0 +1,36 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Supermercado {
+	private String nome;
+	private Set<Caixa> caixas;
+	private Set<Trabalhador> trabalhadores;
+	
+	public Supermercado(String n) {
+		nome = n;
+		caixas = new TreeSet<Caixa>();
+		trabalhadores = new TreeSet<Trabalhador>();
+	}
+	
+	public void addCaixa (int n, TipoCaixa t) {
+		caixas.add(new Caixa(n, t));
+	}
+
+	public Caixa getCaixa(int id) {
+		for (Caixa c : caixas) {
+			if (id == c.getNum())
+				return c;
+		}
+		return null;
+	}
+
+	public String supermercadoInfo() {
+		return "SUPERMERCADO: "+nome+" tem "+caixas.size()+" e "+trabalhadores.size()+" trabalhadores.";
+	}
+	@Override
+	public String toString() {
+		return "SUPERMERCADO: "+nome+" tem "+caixas.size()+" e "+trabalhadores.size()+" trabalhadores.";
+	}
+	
+	
+}

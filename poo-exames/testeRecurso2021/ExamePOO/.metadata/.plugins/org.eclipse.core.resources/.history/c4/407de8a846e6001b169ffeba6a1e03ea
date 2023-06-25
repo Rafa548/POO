@@ -1,0 +1,22 @@
+
+public class Cliente implements Comprador{
+	private int codigo;
+	private String nome;
+	private int totalCompra;
+	private static int cli_cod = 2000;
+	public Cliente(String n) {
+		codigo = cli_cod++;
+		nome = n;
+		
+	}
+	@Override
+	public int pagar(Caixa cx) {
+		//TODO FAZER ISTO
+		if (this.totalCompra == 0) {
+			return 1;
+		}
+		
+		return 0;
+	}
+	
+}

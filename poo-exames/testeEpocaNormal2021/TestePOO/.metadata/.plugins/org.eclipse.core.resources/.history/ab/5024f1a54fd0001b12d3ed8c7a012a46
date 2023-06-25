@@ -1,0 +1,9 @@
+import java.util.TreeSet;
+
+public class AgenciaTuristica {
+	private String nome;
+	private String endereco;
+
+	private TreeSet<Atividade> atividades;
+	
+}

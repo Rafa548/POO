@@ -1,0 +1,12 @@
+
+public class Caixa {
+	private int num;
+	private TipoCaixa tc;
+	private int maxProd;
+	
+	public Caixa(int n, int t, int m) {
+		num = n;
+		tc = t;
+		maxProd = m;
+	}
+}

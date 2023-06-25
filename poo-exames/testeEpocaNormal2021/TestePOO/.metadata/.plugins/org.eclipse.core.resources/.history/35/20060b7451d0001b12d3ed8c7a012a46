@@ -1,0 +1,17 @@
+import java.util.HashSet;
+
+public class AgenciaTuristica {
+	private String nome;
+	private String endereco;
+
+	private HashSet<Atividade> atividades;
+	
+	public AgenciaTuristica(String nome, String endereco) {
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+
+	public void add(PasseioBicicleta ps) {
+		atividades.add(ps);
+	}
+}

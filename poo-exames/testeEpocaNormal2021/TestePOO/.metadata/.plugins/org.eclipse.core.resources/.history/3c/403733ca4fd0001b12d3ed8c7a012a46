@@ -1,0 +1,5 @@
+
+public class Atividade implements PontosdeInteresse{
+	private int id; 
+	private String nome;
+}

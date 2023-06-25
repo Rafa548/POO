@@ -1,0 +1,17 @@
+package ex02;
+
+import java.io.IOException;
+
+public class main {
+
+	public static void main(String[] args) {
+		try {
+			
+		} catch (IOException e) {
+			System.out.print("ERRO na leitura do Ficheiro");
+			System.exit(0);
+		}
+
+	}
+
+}

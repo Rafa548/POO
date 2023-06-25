@@ -1,0 +1,39 @@
+
+public class Trabalhador {
+	@Override
+	public String toString() {
+		return "Trabalhador [num=" + num + ", nome=" + nome + "]";
+	}
+
+	private int num;
+	private String nome;
+	
+	public Trabalhador(int num, String nome) {
+		super();
+		this.num = num;
+		this.nome = nome;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public int compareTo(Trabalhador obj) {
+		if (obj.num > this.num) {
+			return 1;
+		} else if (obj.num < this.num) {
+			return -1;
+		} else {
+			return 0;
+		}
+	}
+	
+}

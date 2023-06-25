@@ -1,0 +1,11 @@
+package ex03;
+
+public class Student {
+	private int nmec;
+	private String nome;
+	private double atp;
+	private double ac;
+	private double ap;
+	
+	
+}

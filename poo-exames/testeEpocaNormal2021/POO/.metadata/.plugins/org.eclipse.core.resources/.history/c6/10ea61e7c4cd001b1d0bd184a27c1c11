@@ -1,0 +1,19 @@
+package ex02;
+
+public class Piloto {
+	private int posicao;
+	private String nome;
+	private String nacionalidade;
+	private String carro;
+	private int pontos;
+	
+	
+	public Piloto(int p, String n, String nac, String c, int pont) {
+		posicao = p;
+		nome = n;
+		nacionalidade = nac;
+		carro = c;
+		pontos = pont;
+	}
+	
+}

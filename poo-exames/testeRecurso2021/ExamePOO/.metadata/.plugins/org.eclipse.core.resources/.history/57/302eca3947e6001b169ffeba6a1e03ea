@@ -1,0 +1,26 @@
+
+public class Caixa {
+	private int num;
+	private TipoCaixa tc;	
+	public Caixa(int n, TipoCaixa t) {
+		num = n;
+		tc = t;
+		maxProd = m;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public TipoCaixa getTc() {
+		return tc;
+	}
+
+	public void setTc(TipoCaixa tc) {
+		this.tc = tc;
+	}
+}

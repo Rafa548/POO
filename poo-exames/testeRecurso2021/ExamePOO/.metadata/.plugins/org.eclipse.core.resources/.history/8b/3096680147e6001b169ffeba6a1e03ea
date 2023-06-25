@@ -1,0 +1,6 @@
+
+public class Supermercado {
+	private String nome;
+	private Set<Caixa> caixas;
+	private Set<Trabalhor> trabalhadores;
+}

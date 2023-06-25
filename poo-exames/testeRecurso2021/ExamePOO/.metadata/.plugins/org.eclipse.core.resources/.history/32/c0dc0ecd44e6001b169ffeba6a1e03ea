@@ -1,0 +1,4 @@
+
+public class Encarregado extends Trabalhador{
+	private ArrayList<Operador> operadores;
+}

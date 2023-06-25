@@ -1,0 +1,14 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Supermercado {
+	private String nome;
+	private Set<Caixa> caixas;
+	private Set<Trabalhador> trabalhadores;
+	
+	public Supermercado(String n) {
+		nome = n;
+		caixas = new TreeSet<Caixa>();
+		trabalhadores = new TreeSet<Trabalhador>();
+	}
+}

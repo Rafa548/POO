@@ -1,0 +1,10 @@
+package ex02;
+
+import java.util.Comparator;
+
+public class sortNacionalidade implements Comparator<Piloto>{
+	@Override
+	public compare(Piloto p1, Piloto p2) {
+		
+	}
+}

@@ -1,0 +1,15 @@
+Vicente
+C:\Users\Vicente\Desktop\ExamePOO\ExamePOO
+
+Alínea 1) ----------------------------------
+
+Cliente [num=2002, nome=Jose, nprodutos=30] - Caixa tipo OPERADOR - Desconto obtido = 10
+Cliente [num=2003, nome=Hugo, nprodutos=60] - Caixa tipo OPERADOR - Desconto obtido = 10
+Cliente [num=2002, nome=Jose, nprodutos=30] - Caixa tipo SELFSERVICE - Desconto obtido = 10
+Cliente [num=2003, nome=Hugo, nprodutos=60] - Caixa tipo SELFSERVICE - Desconto obtido = 10
+Cliente [num=2002, nome=Jose, nprodutos=30] - Caixa tipo EXPRESS - Desconto obtido = 0
+Cliente [num=2003, nome=Hugo, nprodutos=60] - Caixa tipo EXPRESS - Desconto obtido = 10
+* Caixas cujo máximo de produtos é maior do que o número de produtos do cliente cl2
+
+Alínea 2) ----------------------------------
+

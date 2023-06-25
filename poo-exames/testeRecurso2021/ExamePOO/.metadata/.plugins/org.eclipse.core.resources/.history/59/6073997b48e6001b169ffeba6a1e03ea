@@ -1,0 +1,7 @@
+
+public class Operador extends Trabalhador {
+	private Caixa caixa;
+	public Operador(int num, String nome, Caixa c) {
+		super(num,nome);
+	}
+}

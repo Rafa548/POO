@@ -1,0 +1,4 @@
+
+public class PasseioBicicleta extends Atividade{
+	private Set<Local> locais;
+}

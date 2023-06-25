@@ -1,0 +1,7 @@
+
+public class Cliente implements Comprador{
+	private int codigo;
+	private String nome;
+	private int totalCompra;
+	
+}

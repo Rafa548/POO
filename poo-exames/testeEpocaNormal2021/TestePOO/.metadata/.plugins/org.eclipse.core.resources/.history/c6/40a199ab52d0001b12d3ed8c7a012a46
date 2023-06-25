@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class Gastronomia extends Atividade{
+	private ArrayList<Restaurante> restaurantes;
+	
+	public Gastronomia(int id, String nome) {
+		super(id, nome);
+	}
+
+	public Gastronomia(int id, String nome, ArrayList<Restaurante> lista) {
+		super(id,nome);
+		this.restaurantes = lista;
+	}
+
+	public ArrayList<Restaurante> getLista() {
+		return restaurantes;
+	}
+
+	public void setRestaurantes(ArrayList<Restaurante> restaurantes) {
+		this.restaurantes = restaurantes;
+	}
+
+	public int totalRestaurantes() {
+		return restaurantes.size();
+	}
+
+	public void add(Restaurante restaurante) {
+		restaurantes.add(restaurante);
+		
+	}
+	
+	@Override
+	public Collection<String> locais() {
+		Collection<String> c = new ArrayList<String>();
+		
+		for (Restaurante r :restaurantes) {
+			c.add(r.getNome());
+		}
+		
+		return c;
+	}
+	
+}

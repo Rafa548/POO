@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Gastronomia extends Atividade{
+	private ArrayList<Restaurante> restaurantes;
+	
+	public Gastronomia(int id, String nome) {
+		super(id, nome);
+	}
+	
+	
+}

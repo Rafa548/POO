@@ -1,0 +1,42 @@
+package temp;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+import static java.lang.System.*;
+public class ex01 {
+	public static void main(String[] args) {
+		Scanner sc = null;
+		TreeMap<String,Double[]> dados = new TreeMap<String,Double[]>();
+		try {
+			sc = new Scanner(new File("qdv.txt"));
+		} catch (IOException e) {
+			out.print("Erro no ficheiro "+ e);
+		}
+		
+		while(sc.hasNextLine()) {
+			String line = sc.nextLine();
+			Double d[] = null;
+			if (!line.startsWith("#")) {
+				String dadosLinha[] = line.split("	"); 
+
+				if(dados.containsKey(dadosLinha[0])) {
+					d = dados.get(dadosLinha[0]);
+				} else {
+					d = new Double[2];
+				}
+				out.println(dadosLinha[1]);
+				out.print(d[0]);
+				d[0] += Double.parseDouble(dadosLinha[1]);
+				d[1] += 1;
+			}
+		}
+		
+		for (String k : dados.keySet()) {
+			Double[] d = dados.get(k);
+			out.print(k+" - "+d[1]/d[0]);	
+		}
+	}
+}

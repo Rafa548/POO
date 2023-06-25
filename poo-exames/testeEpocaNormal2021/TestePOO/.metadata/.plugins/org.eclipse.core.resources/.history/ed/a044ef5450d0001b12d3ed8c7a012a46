@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Gastronomia extends Atividade{
+	private ArrayList<Restaurante> restaurantes;
+	
+	public Gastronomia(int id, String nome) {
+		super(id, nome);
+	}
+
+	public ArrayList<Restaurante> getRestaurantes() {
+		return restaurantes;
+	}
+
+	public void setRestaurantes(ArrayList<Restaurante> restaurantes) {
+		this.restaurantes = restaurantes;
+	}
+
+	public ArrayList<Restaurante> getLista() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

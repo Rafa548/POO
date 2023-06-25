@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Encarregado extends Trabalhador{
+	private ArrayList<Operador> operadores;
+	
+	public Encarregado(int num, String nome) {
+		super(num, nome);
+		operadores = new ArrayList<Operador>();
+	}
+	public void mudaOperador(Operador op1, Operador op2) {
+		Caixa tmp = op1.getCaixa();
+		op1.setCaixa(op2.getCaixa());
+		op2.setCaixa(tmp);
+	}
+	
+	public void atribuirEmpregado (Operador obj) {
+		operadores.add(obj);
+	}
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("Encarregado [num="+this.getNum()+", nome="+this.getNome()+"] de "+operadores.size()+" operadores");
+		for (Operador o : operadores) {
+			sb.append(", ");
+			sb.append(o);
+		}
+		return sb.toString();
+	}
+	
+}

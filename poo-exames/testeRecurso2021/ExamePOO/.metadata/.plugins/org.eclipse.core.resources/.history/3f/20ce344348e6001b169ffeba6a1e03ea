@@ -1,0 +1,27 @@
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Supermercado {
+	private String nome;
+	private Set<Caixa> caixas;
+	private Set<Trabalhador> trabalhadores;
+	
+	public Supermercado(String n) {
+		nome = n;
+		caixas = new TreeSet<Caixa>();
+		trabalhadores = new TreeSet<Trabalhador>();
+	}
+	
+	public void addCaixa (int n, TipoCaixa t) {
+		caixas.add(new Caixa(n, t, m))
+	}
+
+	public Caixa getCaixa(int i) {
+		 for (Iterator<Caixa> it = caixas.iterator(); it.hasNext(); ) {
+		        Foo f = it.next();
+		        if (f.equals(new Foo("Hello")))
+		            System.out.println("foo found");
+		    }
+	}
+}

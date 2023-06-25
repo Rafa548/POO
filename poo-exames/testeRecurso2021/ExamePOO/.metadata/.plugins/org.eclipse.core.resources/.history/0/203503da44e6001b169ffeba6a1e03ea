@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Encarregado extends Trabalhador{
+	private ArrayList<Operador> operadores;
+	
+	public Encarregado() {
+		super(num, nome);
+		operadores = new ArrayList<Operador>();
+	}
+}

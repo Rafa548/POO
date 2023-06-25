@@ -1,0 +1,11 @@
+import java.util.Set;
+
+public class PasseioBicicleta extends Atividade{
+	
+	private ArrayList<String> locais;
+	public PasseioBicicleta(int id, String nome, String[] strings) {
+		super(id, nome);
+	}
+
+	private Set<Local> locais;
+}

@@ -1,0 +1,11 @@
+package ex03;
+
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = null;
+		TreeMap<Integer,Integer> dados = null;
+	}
+}

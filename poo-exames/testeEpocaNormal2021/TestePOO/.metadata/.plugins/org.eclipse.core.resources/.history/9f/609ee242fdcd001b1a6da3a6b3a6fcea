@@ -1,0 +1,21 @@
+package ex03;
+
+public class Student {
+	private int nmec;
+	private String nome;
+	private double atp;
+	private double ac;
+	private double ap;
+	private int notaFinal;
+	
+	public Student(int nmec, String nome, double atp, double ac, double ap) {
+		this.nmec = nmec;
+		this.nome = nome;
+		this.atp = atp;
+		this.ac = ac;
+		this.ap = ap;
+		this.notaFinal = (int) Math.round(0.3*this.atp+ 0.2*this.ac+0.5*this.ap);
+	}
+	
+	
+}
